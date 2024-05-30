@@ -1,7 +1,6 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
-using namespace std;
-
+using namespace std;﻿
 
 class Herbivores
 {
@@ -32,15 +31,15 @@ public:
         weight = 100;
         alive = true;
     }
-    void EatGrass() override 
+    void EatGrass() 
     {
         weight += 10;
     }
-    int GetWeight() override 
+    int GetWeight() 
     {
         return weight;
     }
-    bool IsAlive() override 
+    bool IsAlive()  
     {
         return alive;
     }
@@ -61,15 +60,15 @@ public:
         weight = 200;
         alive = true;
     }
-    void EatGrass() override
+    void EatGrass() 
     {
         weight += 10;
     }
-    int GetWeight() override
+    int GetWeight() 
     {
         return weight;
     }
-    bool IsAlive() override
+    bool IsAlive() 
     {
         return alive;
     }
@@ -90,15 +89,15 @@ public:
         weight = 140;
         alive = true;
     }
-    void EatGrass() override
+    void EatGrass() 
     {
         weight += 10;
     }
-    int GetWeight() override
+    int GetWeight() 
     {
         return weight;
     }
-    bool IsAlive() override
+    bool IsAlive() 
     {
         return alive;
     }
@@ -119,7 +118,7 @@ public:
     {
         power = 220;
     }
-    void Eat(Herbivores* herbivore) override 
+    void Eat(Herbivores* herbivore) 
     {
         if (power >= herbivore->GetWeight()) 
         {
@@ -130,7 +129,7 @@ public:
             power -= 10;
         }
     }
-    int GetPower() override 
+    int GetPower() 
     {
         return power;
     }
@@ -145,7 +144,7 @@ public:
     {
         power = 50;
     }
-    void Eat(Herbivores* herbivore) override
+    void Eat(Herbivores* herbivore) 
     {
         if (power >= herbivore->GetWeight())
         {
@@ -156,7 +155,7 @@ public:
             power -= 10;
         }
     }
-    int GetPower() override
+    int GetPower() 
     {
         return power;
     }
@@ -171,7 +170,7 @@ public:
     {
         power = 150;
     }
-    void Eat(Herbivores* herbivore) override
+    void Eat(Herbivores* herbivore) 
     {
         if (power >= herbivore->GetWeight())
         {
@@ -182,7 +181,7 @@ public:
             power -= 10;
         }
     }
-    int GetPower() override
+    int GetPower() 
     {
         return power;
     }
@@ -307,5 +306,3 @@ int main()
     EurasianAnimal.NutritionCarnivores();
     EurasianAnimal.Stats();
 }
-
-
